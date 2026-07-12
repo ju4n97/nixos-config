@@ -25,13 +25,9 @@ Declarative system configuration tree based on Nix Flakes.
 3. Apply state:
 
    ```sh
-   sudo nixos-rebuild switch --flake .#nixos
-   ```
-
-   or use `rebuild` alias
-
-   ```sh
-   rebuild
+   sudo nixos-rebuild switch --flake .#nixos 
+   
+   # Or rebuild alias
    ```
 
 ## Management
