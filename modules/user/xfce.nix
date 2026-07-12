@@ -10,20 +10,19 @@
 
   programs.rofi = {
     enable = true;
-    theme = "solarized";
   };
 
   xfconf.settings = {
     xfwm4 = {
       "general/workspace_count" = 2;
-      "general/workspace_1_key" = "<Super>1";
+      "general/workspace_1_key" = "<Super>1";   
       "general/workspace_2_key" = "<Super>2";
     };
 
     xfce4-keyboard-shortcuts = {
       "commands/custom/Print" = "flameshot gui";
       "commands/custom/<Super>Space" = "rofi -show combi -combi-modes 'window,run,ssh' -modes combi";
-      "commands/custom/<Super><Shift>E" = "rofi -modi emoji -show emoji";
+      "commands/custom/<Super><Shift>E" = "rofimoji";
       "commands/custom/<Super><Shift>C" = ''sh -c "xcolor | xsel -ib"'';
       "commands/custom/<Super><Shift>X" = ''sh -c "find ~/Projects -mindepth 1 -maxdepth 1 -type d | rofi -dmenu -i | xargs -r -I{} code {}"'';
       "commands/custom/override" = true;
