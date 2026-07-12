@@ -7,7 +7,7 @@
     ../../modules/system/xfce.nix
   ];
 
-  networking.hostName = "nixos";
+  networking.hostName = "vm01";
 
   users.users.juan = {
     isNormalUser = true;

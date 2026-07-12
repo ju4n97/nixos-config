@@ -23,7 +23,7 @@
       ls = "eza --color=auto";
       la = "eza --color=auto -la";
       task = "go-task";
-      rebuild = "sudo nixos-rebuild switch --flake ~/nixos-config#nixos";
+      rebuild = "sudo nixos-rebuild switch --flake ~/nixos-config#$(hostname)";
     };
 
     history = {

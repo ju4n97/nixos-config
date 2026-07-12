@@ -47,6 +47,6 @@ sudo nix-collect-garbage -d
 
 ## Subsystems
 
-- Core: NixOS 24.05 (x86_64-linux)
+- Core: NixOS 26.05 (x86_64-linux)
 - DE: XFCE4 / LightDM
 - Shell: Zsh / Direnv / Oh-My-Posh

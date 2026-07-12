@@ -5,9 +5,10 @@
     ./hardware-configuration.nix
     ../../modules/system/base.nix
     ../../modules/system/xfce.nix
+    ../../modules/system/nvidia.nix 
   ];
 
-  networking.hostName = "nixos";
+  networking.hostName = "ws01";
 
   users.users.juan = {
     isNormalUser = true;

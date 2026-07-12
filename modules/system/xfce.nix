@@ -3,12 +3,8 @@
 {
   services.xserver = {
     enable = true;
-    xkb.layout = "latam";
-    
-    # Display manager
+    xkb.layout = "latam";    
     displayManager.lightdm.enable = true;
-    
-    # Desktop environment
     desktopManager.xfce.enable = true;
   };
 }
