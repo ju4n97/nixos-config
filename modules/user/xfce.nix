@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    xfce4-whiskermenu-plugin
     rofimoji
     flameshot
     gnome-keyring
@@ -23,6 +24,14 @@
       "super + shift + x" = "find ~/Projects -mindepth 1 -maxdepth 1 -type d | rofi -dmenu -i | xargs -r -I{} code {}";
     };
   };
+
+  xdg.configFile."autostart/sxhkd.desktop".text = ''
+    [Desktop Entry]
+    Name=sxhkd
+    Exec=systemctl --user start sxhkd
+    Terminal=false
+    Type=Application
+  '';
 
   xfconf.settings = {
     xfwm4 = {

@@ -1,8 +1,9 @@
-{ pkgs, unstable, ... }:
+{ pkgs, unstable, config, ... }:
 
 {
   programs.firefox = {
     enable = true;
+    configPath = "${config.xdg.configHome}/mozilla/firefox";
     profiles.juan = {
       id = 0;
       name = "juan";
@@ -10,6 +11,14 @@
       settings = {
         "browser.startup.page" = 3;
         "privacy.trackingprotection.enabled" = true;
+        "layout.frame_rate" = 240; 
+        "media.ffmpeg.vaapi.enabled" = true;
+        "media.hardware-video-decoding.force-enabled" = true;
+        "network.dns.disablePrefetch" = false;
+        "network.http.speculative-parallel-limit" = 6;
+        "network.prefetch-next" = false;
+        "network.trr.mode" = 2;
+        "network.trr.uri" = "https://mozilla.cloudflare-dns.com/dns-query";
       };
     };
   };

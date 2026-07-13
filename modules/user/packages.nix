@@ -6,13 +6,21 @@
     eza
     fastfetch
     fd
+    ffmpeg
     fzf
-    go-task
     htop
+    jq
+    less
+    mpv
     p7zip
     ripgrep
     tree
-    xclip
-    zoxide    
+    unzip
+    vim
+    wget
+    wl-clipboard
+    xdg-utils
+    zip
+    zoxide
   ];
 }
